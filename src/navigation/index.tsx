@@ -7,6 +7,7 @@ export type RootStackParamList = {
     Auth: undefined;
     Login: undefined;
     Home: undefined;
+    HomeStack: undefined;
 };
 
 export const Stack = createStackNavigator<RootStackParamList>();
@@ -42,7 +43,7 @@ const Navigation = () => (
                     }),
                 }} />
             <Stack.Screen
-                name='Home'
+                name='HomeStack'
                 component={HomeStack}
                 options={{
                     headerShown: false,
