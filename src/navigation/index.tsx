@@ -41,7 +41,7 @@ const Navigation = () => (
                         },
                     }),
                 }} />
-            {/* <Stack.Screen
+            <Stack.Screen
                 name='Home'
                 component={HomeStack}
                 options={{
@@ -51,7 +51,7 @@ const Navigation = () => (
                             opacity: current.progress,
                         },
                     }),
-                }} /> */}
+                }} />
         </Stack.Navigator>
     </NavigationContainer>
 );
