@@ -30,7 +30,8 @@ const HomeStack = () => (
 
 const Navigation = () => (
     <NavigationContainer>
-        <Stack.Navigator>
+        <Stack.Navigator
+            initialRouteName='Auth'>
             <Stack.Screen
                 name='Auth'
                 component={AuthStack}

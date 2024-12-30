@@ -1,40 +1,22 @@
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { Pressable, SafeAreaView, Text, View } from "react-native";
 import { RootStackParamList } from "../navigation";
-import GradientView from "../components/PrimaryButton";
+import TextField from "../components/TextField";
+import GradientView from "../components/GradientView";
+import { Button } from "@react-navigation/elements";
 
 type LoginProps = NativeStackScreenProps<RootStackParamList, 'Login'>;
 
 const Login = ({ navigation }: LoginProps) => {
     return (
         <SafeAreaView className='flex-1 bg-black'>
-            <View className='flex-1'>
-                <GradientView>
-                    <View
-                        className="h-[80px] rounded flex-row">
-                        <View className="flex-1 justify-center ml-5">
-                            <Text
-                                className="color-white text-xs font-normal">
-                                Total Balance
-                            </Text>
-                            <Text
-                                className="color-white font-black text-3xl">
-                                $1500
-                            </Text>
-                        </View>
-                        <View className="flex-1 justify-center items-center ml-5 flex-row">
-                            <Text
-                                className="color-white font-semibold text-xs">
-                                Withdraw
-                            </Text>
-                            <View className="w-4" />
-                            <Text
-                                className="color-white font-semibold text-xs">
-                                Deposit
-                            </Text>
-                        </View>
-                    </View>
-                </GradientView>
+            <View className='flex-1 p-4 justify-center'>
+                <Text className="color-white text-center font-bold text-4xl mb-10">DPKing Dealer</Text>
+                <TextField placeholder="Username" isRequired={true} />
+                <TextField placeholder="Password" isRequired={true} />
+                <Pressable className="h-12 bg-venetian-nights rounded-lg justify-center mt-4">
+                    <Text className="text-white text-center text-xl">Login</Text>
+                </Pressable>
             </View>
 
         </SafeAreaView >

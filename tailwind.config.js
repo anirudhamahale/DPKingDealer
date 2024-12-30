@@ -6,7 +6,12 @@ module.exports = {
   ],
   presets: [require("nativewind/preset")],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'venetian-nights': '#794DFD',
+        'sambucus': '#1B1C2D',
+      },
+    },
   },
   plugins: [],
 }

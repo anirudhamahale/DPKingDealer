@@ -1,6 +1,6 @@
 import React from "react";
 import { Pressable, Text, TouchableOpacity, View } from "react-native";
-import { LinearGradient } from "react-native-linear-gradient";
+import { LinearGradient, LinearGradientProps } from "react-native-linear-gradient";
 import { cssInterop } from "nativewind";
 
 const StyledLinearGradient = cssInterop(LinearGradient, {
@@ -19,7 +19,6 @@ const GradientView: React.FC<CustomContainerProps> = ({ children }) => {
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 1 }} className="rounded">
                 {children}
-
             </StyledLinearGradient>
         </View>
     );
