@@ -1,4 +1,4 @@
-package com.dpking
+package com.dpKingDealer
 
 import android.app.Application
 import com.facebook.react.PackageList
