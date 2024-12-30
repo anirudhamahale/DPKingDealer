@@ -14,7 +14,9 @@ const Login = ({ navigation }: LoginProps) => {
                 <Text className="color-white text-center font-bold text-4xl mb-10">DPKing Dealer</Text>
                 <TextField placeholder="Username" isRequired={true} />
                 <TextField placeholder="Password" isRequired={true} />
-                <Pressable className="h-12 bg-venetian-nights rounded-lg justify-center mt-4">
+                <Pressable
+                    className="h-12 bg-venetian-nights rounded-lg justify-center mt-4 overflow-hidden"
+                    android_ripple={{ color: 'white', borderless: false, foreground: true }}>
                     <Text className="text-white text-center text-xl">Login</Text>
                 </Pressable>
             </View>
