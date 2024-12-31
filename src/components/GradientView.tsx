@@ -2,10 +2,8 @@ import React from "react";
 import { Pressable, Text, TouchableOpacity, View } from "react-native";
 import { LinearGradient, LinearGradientProps } from "react-native-linear-gradient";
 import { cssInterop } from "nativewind";
+import StyledLinearGradient from "./StyledViews";
 
-const StyledLinearGradient = cssInterop(LinearGradient, {
-    className: 'style'
-});
 
 interface CustomContainerProps {
     children: React.ReactNode; // Accepts any valid React child, including <View>, <Text>, etc.
